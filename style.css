@@ -151,11 +151,11 @@ table {
 
 }
 #carouselExampleControls .container-md {
-    width: 80%;
+    width: 50%;
     height: 15vh;
     margin-top: -5vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
     display: flex;
 
     border-radius: 2px;
@@ -164,7 +164,7 @@ table {
 
 }
 #carouselExampleControls .container-md .col-8 h3{
-
+    width: 80%;
     margin-top: 5vh;
     margin-left: 3vh;
     font-size: 20px;
@@ -214,7 +214,6 @@ table {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-    background-color: black;
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text h2 { 
     font-size: 25px;
@@ -238,7 +237,7 @@ table {
     margin-top: 5vh;
     background-color: transparent;
     border: 2px solid orangered;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .btn:hover { 
     
@@ -268,23 +267,170 @@ table {
 
 /* END SLIDER HOME */
 
+
+/* ABOUT COMPANY */
 #about-company {
     width: 100%;
-    height: 80vh;
+    height: auto;
+    margin-top: 10vh;
+    padding-bottom: 10px;
     background-color: green;
+    position: relative;
 }
+#about-company .container {
+    width: 60%;
+    height: auto;
+    margin-top: 15vh;
+    background-color: rgb(128, 0, 96);
+    padding-bottom: 5px;
+    margin-bottom: 2vh;
+}
+#about-company .container .container-md {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(28, 0, 128);
+}
+#about-company .container .container-md .col-12 {
+   color: white;
+   display: flex;
+}
+#about-company .container .container-md .col-12 h2 {
+    font-size: 30px;
+    margin-top: 2vh;
+}
+#about-company .container .container-md .col-12 h3 {
+    margin-top: 5vh;
+}
+#about-company .container .container-md .col-12 h4 {
+   margin-top: 3vh;
+   text-align: justify;
+   font-size: 16px;
+   letter-spacing: .2px;
+}
+#about-company .container .container-md .col-12 .col-6 {
+    background-color: red;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    border: 1px solid black;
+    height: 15vh;
+ }
 
+ #about-company .container .row {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+ }
+
+ #about-company .container .row .card {
+    background-color: rgba(7, 7, 7, 0.459);
+    margin-top: .5vh;
+    text-align: center;
+ }
+ #about-company .container .row .card .card-header {
+    color: rgb(165, 10, 10);
+ }
+ #about-company .container .row .card p {
+     font-size: 16px;
+     text-align: justify;
+    color: rgb(255, 255, 255);
+ }
+
+/* END ABOUT COMPANY */
+
+
+/* NUMBER PROJECTS */
 #number-projects {
     width: 100%;
     height: 50vh;
+    margin-top: 10vh;
     background-color: rebeccapurple;
+    display: flex;
+}
+#number-projects .col-3 {
+
+    margin-top: 5vh;
+    height: 40vh;
+    border: 1px solid black;
+    background-color: rgb(51, 121, 153);
+    display: inline-block;
+}
+#number-projects .col-3 .imagem {
+    
+    height: 50%;
+    background-color: red;
+}
+#number-projects .col-3 .row {
+    
+    height: 25%;
+    border: 1px solid black;
+    background-color: rgb(106, 211, 9);
 }
 
+/* END NUMBER PROJECTS */
+
+
+/* OUR WORK */
 #work {
     width: 100%;
     height: 80vh;
+    margin-top: 15vh;
     background-color: pink;
 }
+#work .title h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#work .container-lm {
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    margin-top: 5vh;
+    background-color: rgb(105, 12, 28);
+}
+#work .container-lm .col-6 {
+
+    background-color: rgb(212, 175, 11);
+    border: 1px solid white;
+}
+
+#work .container-lm .col-6 h2{
+
+    margin-top: 15vh;
+    margin-left: 5vh;
+    font-size: 30px;
+}
+#work .container-lm .col-6 h3{
+    width: 70%;
+    margin-top: 7vh;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 5vh;
+
+}
+#work .container-lm .col-4 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(212, 175, 11);
+    border: 1px solid white;
+    display: grid;
+    
+}
+#work .container-lm .col-4 .col-sm{
+
+    grid-template-columns: 100px 100px;
+    background-color: green;
+    border: 1px solid black;
+    display: flex;
+}
+#work .container-lm .col-4 .col-sm .col-6{
+    height: 100%;
+    background-color: black;
+}
+
+/* END OUR WORK */
 
 #portfolio-projects {
     width: 100%;
