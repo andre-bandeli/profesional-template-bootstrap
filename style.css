@@ -52,7 +52,7 @@ table {
 #head {
     width: 100%;
     height: 15vh;
-    background-color: black;
+    background-color: white;
 }
 #head .container {
     width: 90%;
@@ -64,7 +64,6 @@ table {
     margin-top: auto;
     margin-bottom: auto;
 
-    background-color: rgb(24, 132, 165);
 }
 #head .container .col-lg-4 {
     text-align: center;
@@ -74,8 +73,8 @@ table {
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
 
-    background-color: yellow;
-    border: 1px solid rebeccapurple;
+
+    border-right: .1px solid rgba(3, 3, 3, 0.336);
 }
 #head .container .col-lg-4 .row {
     width: 100%;
@@ -84,8 +83,12 @@ table {
     margin-left: auto;
     margin-right: auto;
 
-    background-color: red;
-    border: 1px solid black;
+}
+#head .container .col-lg-4 .row h4{
+    margin-top: 2vh;
+}
+#head .container .col-lg-4 .row h5{
+    font-weight: bolder;
 }
 
 /* END HEAD*/
@@ -94,12 +97,11 @@ table {
 
 #navbar {
     width: 100%;
-    height: 5vh;
-    background-color: yellow;
+    height: 7vh;
+    background-color: rgba(253, 253, 253, 0.082);
 }
 
 #navbar .navbar-nav {
-    background-color: red;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -109,16 +111,27 @@ table {
 #navbar .collapse .redes {
     width: 20%;
     height: 5vh;
-    background-color: red;
 
     display: flex;
 }
 #navbar .collapse .redes .col-4 {
 
     height: 5vh;
-    border: 1px solid black;
-    background-color: rgb(0, 17, 255);
+
 }
+#navbar .collapse .redes .col-4 img {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: .5vh;
+}
+#navbar .collapse .redes .col-4 .nav-item ul  {
+
+    font-weight: bolder;
+    color: pink;
+}
+
 
 @media (max-width: 990px) {
     
@@ -146,7 +159,7 @@ table {
 #carouselExampleControls {
     width: 100%;
     height: 80vh;
-    margin-top: 2vh;
+    margin-top: -7vh;
     background-color: yellow;
 
 }
@@ -171,7 +184,7 @@ table {
 
 }
 #carouselExampleControls .carousel-inner {
-    background-color: green;
+    background-color: black;
 }
 
 #carouselExampleControls .carousel-inner .carousel-item {
@@ -193,26 +206,33 @@ table {
     position: absolute;
     width: 80%;
     height: 35vh;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 15vh;
     margin-top: 15vh;
     z-index: 2;
 
     display: inline;
+
 }
 
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 {
     height: 30%;
+    width: 90%;
     margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
 
     border: 1px solid transparent;
     position: static;
+
+
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text { 
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+
     margin-top: 5%;
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text h2 { 
@@ -230,23 +250,39 @@ table {
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .btn { 
     
-    width: 35%;
+    width: 40%;
     height: 6vh;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
     margin-top: 5vh;
     background-color: transparent;
     border: 2px solid orangered;
     color: rgb(255, 255, 255);
 }
+#carouselExampleControls .col-4 .btn { 
+    
+    width: 80%;
+    height: 6vh;
+    margin-left: 0%;
+    margin-top: 5vh;
+    background-color: rgba(255, 68, 0, 0.534);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+#carouselExampleControls .col-4 .btn:hover { 
+    
+    background-color: rgba(255, 68, 0, 0.938);
+    transition: .4s ease;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .btn:hover { 
     
-    width: 35%;
-    height: 6vh;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 5vh;
+
     background-color: rgba(255, 68, 0, 0.781);
+    transition: .4s ease-in-out;
     border: none;
     color: black;
     font-weight: bold;
@@ -274,66 +310,108 @@ table {
     height: auto;
     margin-top: 10vh;
     padding-bottom: 10px;
-    background-color: green;
     position: relative;
 }
 #about-company .container {
     width: 60%;
     height: auto;
     margin-top: 15vh;
-    background-color: rgb(128, 0, 96);
+
     padding-bottom: 5px;
     margin-bottom: 2vh;
 }
 #about-company .container .container-md {
-    width: 60%;
+    width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(28, 0, 128);
+
 }
 #about-company .container .container-md .col-12 {
-   color: white;
+   color: rgb(0, 0, 0);
    display: flex;
 }
 #about-company .container .container-md .col-12 h2 {
     font-size: 30px;
-    margin-top: 2vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 #about-company .container .container-md .col-12 h3 {
-    margin-top: 5vh;
+    margin-top: 10vh;
+    cursor: pointer;
+    width: 20%;
+    padding: 10px;
+}
+#about-company .container .container-md .col-12 h3:hover {
+    width: 15%;
+    height: 4vh;
+    transition: .4s ease-in-out;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.733);
+
+    color: rgb(255, 255, 255);
 }
 #about-company .container .container-md .col-12 h4 {
    margin-top: 3vh;
-   text-align: justify;
+   text-align: center;
    font-size: 16px;
-   letter-spacing: .2px;
+   margin-left: 5vh;
 }
 #about-company .container .container-md .col-12 .col-6 {
-    background-color: red;
-    margin-top: 2vh;
-    margin-bottom: 4vh;
-    border: 1px solid black;
-    height: 15vh;
- }
 
+
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    height: 15vh;
+    cursor: pointer;
+
+ }
+ #about-company .container .container-md .col-12 .col-6 h4 {
+
+    width: 70%;
+    margin-left: 15vh;
+    margin-top: 5vh;
+ }
+ #about-company .container .container-md .col-12 .col-6 img {
+
+    width: 70px;
+    margin-top: 3vh;
+    margin-left: 10vh;
+    position: absolute;
+ }
  #about-company .container .row {
     margin-top: 5vh;
     margin-bottom: 5vh;
  }
 
  #about-company .container .row .card {
-    background-color: rgba(7, 7, 7, 0.459);
+    background-color: transparent;
+    border: 1px solid orangered;
     margin-top: .5vh;
     text-align: center;
+    color: black;
+ }
+ #about-company .container .row .card:hover {
+    background-color: orangered;
+    transition: .4s ease-in-out;
+ }
+ #about-company .container .row .card h6 {
+    color: black;
  }
  #about-company .container .row .card .card-header {
-    color: rgb(165, 10, 10);
+    color: rgba(165, 10, 10, 0.795);
+    background-color: transparent;
  }
  #about-company .container .row .card p {
      font-size: 16px;
      text-align: justify;
-    color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
  }
 
 /* END ABOUT COMPANY */
@@ -344,27 +422,54 @@ table {
     width: 100%;
     height: 50vh;
     margin-top: 10vh;
-    background-color: rebeccapurple;
+
     display: flex;
 }
 #number-projects .col-3 {
 
     margin-top: 5vh;
     height: 40vh;
-    border: 1px solid black;
-    background-color: rgb(51, 121, 153);
+
+
     display: inline-block;
+    cursor: pointer;
+    background-color: black;
+}
+#number-projects .col-3:hover {
+
+    background-color: rgba(0, 0, 0, 0.795);
 }
 #number-projects .col-3 .imagem {
     
     height: 50%;
-    background-color: red;
+
+}
+#number-projects .col-3 .imagem img {
+    
+    margin-left: 14vh;
+    margin-top: 3vh;
+    width: 30%;
 }
 #number-projects .col-3 .row {
     
     height: 25%;
-    border: 1px solid black;
-    background-color: rgb(106, 211, 9);
+
+}
+#number-projects .col-3 .row h2 {
+    
+    font-size: 40px;
+    margin-top: 2vh;
+    margin-left: 17vh;
+    color: white;
+
+}
+#number-projects .col-3 .row h3 {
+    
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-left: 12vh;
+    color: white;
+
 }
 
 /* END NUMBER PROJECTS */
@@ -375,9 +480,8 @@ table {
     width: 100%;
     height: 80vh;
     margin-top: 15vh;
-    background-color: pink;
 }
-#work .title h2 {
+ .title h2 {
     font-size: 35px;
     font-weight: 600;
 }
@@ -387,19 +491,19 @@ table {
     width: 100%;
     height: 70vh;
     display: flex;
-    margin-top: 5vh;
-    background-color: rgb(105, 12, 28);
+    margin-top: 15vh;
+
 }
 #work .container-lm .col-6 {
 
-    background-color: rgb(212, 175, 11);
+
     border: 1px solid white;
 }
 
 #work .container-lm .col-6 h2{
 
     margin-top: 15vh;
-    margin-left: 5vh;
+    margin-left: 15vh;
     font-size: 30px;
 }
 #work .container-lm .col-6 h3{
@@ -407,13 +511,12 @@ table {
     margin-top: 7vh;
     text-align: justify;
     font-size: 20px;
-    margin-left: 5vh;
+    margin-left: 15vh;
 
 }
 #work .container-lm .col-4 {
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(212, 175, 11);
     border: 1px solid white;
     display: grid;
     
@@ -421,30 +524,76 @@ table {
 #work .container-lm .col-4 .col-sm{
 
     grid-template-columns: 100px 100px;
-    background-color: green;
-    border: 1px solid black;
+
     display: flex;
 }
 #work .container-lm .col-4 .col-sm .col-6{
     height: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.753);
 }
 
 /* END OUR WORK */
 
+/* OUR WORK */
 #portfolio-projects {
     width: 100%;
     height: 100vh;
-    background-color: yellow;
+    margin-top: 15vh;
+
+}
+#portfolio-projects .container-md-12 {
+    width: 90%;
+    height: 70vh;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
 }
 
+/* END OUR WORK */
+
+/* CLIENTS */
 #clients {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
+
     background-color: black;
+    display: inline;
+}
+#clients .container-md-12 {
+    width: 70%;
+    height: 30vh;
+    margin-left: 12%;
+    margin-right: 15%;
+
+    margin-top: 15vh;
+
+    display: flex;
+}
+#clients .container-md-12 .col-4 {
+
+    height: 100%;
+
+    margin-top: 0;
+    margin-left: 2vh;
+    background-color: rgba(7, 6, 7, 0.74);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+#clients .container-md-12 .col-4:hover {
+    
+    background-color: rgba(0, 0, 0, 0.938);
+    transition: .4s;
+}
+#clients .container-md-12 .col-4 img {
+    margin-top: 4vh;
+    width: 40%;
 }
 
+
 #footer {
+    margin-top: 15vh;
     width: 100%;
     height: 50vh;
     background-color: orange;
