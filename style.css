@@ -122,39 +122,150 @@ table {
 
 @media (max-width: 990px) {
     
-#navbar {
-    width: 100%;
-    height: 5vh;
-
-}
-
-#navbar .navbar-nav {
-    width: 100%;
-    height: 50vh;
-    text-align: center;
-
-}
-
-#navbar .collapse .redes {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5vh;
-}
-#navbar .collapse .redes .col-4 {
-
-
-}
+    #navbar {
+        width: 100%;
+        height: 5vh;
+    }
+    #navbar .navbar-nav {
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+    }
+    #navbar .collapse .redes {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+    }
 }
 
 /* END NAVBAR*/
 
 /* SLIDER HOME */
 
-#slider {
+
+#carouselExampleControls {
     width: 100%;
-    height: 75vh;
-    background-color: red;
+    height: 80vh;
+    margin-top: 2vh;
+    background-color: yellow;
+
 }
+#carouselExampleControls .container-md {
+    width: 80%;
+    height: 15vh;
+    margin-top: -5vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+
+    border-radius: 2px;
+    position: absolute;
+    background-color: rgb(255, 196, 0);
+
+}
+#carouselExampleControls .container-md .col-8 h3{
+
+    margin-top: 5vh;
+    margin-left: 3vh;
+    font-size: 20px;
+
+}
+#carouselExampleControls .carousel-inner {
+    background-color: green;
+}
+
+#carouselExampleControls .carousel-inner .carousel-item {
+
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.863);
+
+}
+
+#carouselExampleControls .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 80vh;
+    opacity: .5;
+    z-index: 1;
+}
+#carouselExampleControls .carousel-inner .carousel-item .container {
+    
+    position: absolute;
+    width: 80%;
+    height: 35vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15vh;
+    margin-top: 15vh;
+    z-index: 2;
+
+    display: inline;
+}
+
+#carouselExampleControls .carousel-inner .carousel-item .container .col-12 {
+    height: 30%;
+    margin-top: auto;
+
+    border: 1px solid transparent;
+    position: static;
+}
+#carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text { 
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: black;
+}
+#carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text h2 { 
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 8vh;
+}
+#carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text h1 { 
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    animation: fadeInLeft .8s;
+}
+#carouselExampleControls .carousel-inner .carousel-item .container .col-12 .btn { 
+    
+    width: 35%;
+    height: 6vh;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5vh;
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: black;
+}
+#carouselExampleControls .carousel-inner .carousel-item .container .col-12 .btn:hover { 
+    
+    width: 35%;
+    height: 6vh;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5vh;
+    background-color: rgba(255, 68, 0, 0.781);
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 1;
+       transform: translateX(-350px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+
+
+
 /* END SLIDER HOME */
 
 #about-company {
