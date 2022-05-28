@@ -52,7 +52,7 @@ table {
 #head {
     width: 100%;
     height: 15vh;
-    background-color: white;
+    background-color:white;
 }
 #head .container {
     width: 90%;
@@ -63,6 +63,8 @@ table {
     
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 #head .container .col-lg-4 {
@@ -90,6 +92,49 @@ table {
 #head .container .col-lg-4 .row h5{
     font-weight: bolder;
 }
+#head .container .col-lg-4 .row .btn{
+
+    background-color: rgba(240, 64, 20, 0.76);
+    border: none;
+    color: black;
+    font-weight: bolder;
+}
+#head .container .col-lg-4 .row .btn:hover{
+
+    background-color: rgba(240, 64, 20, 0.932);
+    color: black;
+}
+
+@media (max-width:550px) {
+    #head .container {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+
+        margin-left: 12%;
+        margin-right: 12%;
+    
+    }
+    #head .container .col-lg-4 {
+        height: 60%;
+        border: none;
+        text-align: center;
+        border-bottom: .5px solid rgba(0, 0, 0, 0.507) ;
+    }
+    #head .container .col-lg-4 .row h4{
+        font-size: 16px;
+    }
+    #head .container .col-lg-4 .row h5{
+        font-size: 16px;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+    #head .container .col-lg-4 .row .btn{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        background-color: rgb(216, 27, 14);
+    }
+}
 
 /* END HEAD*/
 
@@ -98,7 +143,7 @@ table {
 #navbar {
     width: 100%;
     height: 7vh;
-    background-color: rgba(253, 253, 253, 0.082);
+    background-color: rgba(253, 253, 253, 0.945);
 }
 
 #navbar .navbar-nav {
@@ -111,7 +156,7 @@ table {
 #navbar .collapse .redes {
     width: 20%;
     height: 5vh;
-
+    cursor: pointer;
     display: flex;
 }
 #navbar .collapse .redes .col-4 {
@@ -159,7 +204,7 @@ table {
 #carouselExampleControls {
     width: 100%;
     height: 80vh;
-    margin-top: -7vh;
+    margin-top: 0vh;
     background-color: yellow;
 
 }
@@ -299,6 +344,35 @@ table {
     }
  }   
 
+ @media (max-width: 550px) {
+    #carouselExampleControls .container-md .col-8 h3{
+        width: 80%;
+        margin-top: 5vh;
+        margin-left: 1vh;
+        font-size: 16px;
+    }
+
+    #carouselExampleControls .container-md {
+        width: 65%;
+        height: 15vh;
+        margin-top: -5vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+
+        border-radius: 2px;
+        position: absolute;
+
+    }
+    #carouselExampleControls .col-4 .btn { 
+        background-color: rgba(255, 68, 0, 0.938);
+        width: auto;
+        height: 6vh;
+        margin-left: -7vh;
+        font-size: 10px;
+        
+    }
+ }
 
 
 /* END SLIDER HOME */
@@ -311,12 +385,16 @@ table {
     margin-top: 10vh;
     padding-bottom: 10px;
     position: relative;
+
 }
 #about-company .container {
     width: 60%;
     height: auto;
     margin-top: 15vh;
 
+
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 5px;
     margin-bottom: 2vh;
 }
@@ -330,10 +408,13 @@ table {
 #about-company .container .container-md .col-12 {
    color: rgb(0, 0, 0);
    display: flex;
+   margin-top: 5vh;
+
 }
+
 #about-company .container .container-md .col-12 h2 {
-    font-size: 30px;
-    width: 80%;
+    font-size: 2vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
@@ -359,32 +440,37 @@ table {
 }
 #about-company .container .container-md .col-12 h4 {
    margin-top: 3vh;
-   text-align: center;
+   text-align: justify;
    font-size: 16px;
-   margin-left: 5vh;
+   margin-left: 0vh;
+   width: 100%;
 }
 #about-company .container .container-md .col-12 .col-6 {
 
-
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5vh;
     margin-bottom: 4vh;
     height: 15vh;
     cursor: pointer;
+    display: inline;
 
  }
  #about-company .container .container-md .col-12 .col-6 h4 {
 
-    width: 70%;
-    margin-left: 15vh;
-    margin-top: 5vh;
+    width: 100%;
+    margin-left: 0vh;
+    margin-top: 1vh;
  }
  #about-company .container .container-md .col-12 .col-6 img {
 
-    width: 70px;
-    margin-top: 3vh;
-    margin-left: 10vh;
-    position: absolute;
+    width: 20%;
+    margin-top: 1vh;
+    margin-left: 40%;
+    margin-right: 40%;
  }
+
+
  #about-company .container .row {
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -392,7 +478,7 @@ table {
 
  #about-company .container .row .card {
     background-color: transparent;
-    border: 1px solid orangered;
+    border-bottom: 1px solid orangered;
     margin-top: .5vh;
     text-align: center;
     color: black;
@@ -414,6 +500,33 @@ table {
      color: rgb(0, 0, 0);
  }
 
+ @media (max-width:550px) {
+    #about-company  {
+        width: 60vh;
+        margin-top: 25vh;
+    }  
+    #about-company .container {
+        width: auto;
+        margin-left: 2vh;
+    }
+    #about-company .container .container-md .col-12 h2 {
+    font-size: 4vw;
+    width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    }
+
+    #about-company .container .container-md .col-12  {
+        width: 100%;
+        margin-left: 0vh;
+    }
+ }
+
+
 /* END ABOUT COMPANY */
 
 
@@ -433,11 +546,11 @@ table {
 
     display: inline-block;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.89);
 }
 #number-projects .col-3:hover {
 
-    background-color: rgba(0, 0, 0, 0.795);
+    background-color: rgba(0, 0, 0, 0.911);
 }
 #number-projects .col-3 .imagem {
     
@@ -478,8 +591,9 @@ table {
 /* OUR WORK */
 #work {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     margin-top: 15vh;
+    background-color: black;
 }
  .title h2 {
     font-size: 35px;
@@ -503,7 +617,7 @@ table {
 #work .container-lm .col-6 h2{
 
     margin-top: 15vh;
-    margin-left: 15vh;
+    margin-left: 20%;
     font-size: 30px;
 }
 #work .container-lm .col-6 h3{
@@ -511,7 +625,7 @@ table {
     margin-top: 7vh;
     text-align: justify;
     font-size: 20px;
-    margin-left: 15vh;
+    margin-left: 20%;
 
 }
 #work .container-lm .col-4 {
@@ -532,23 +646,105 @@ table {
     background-color: rgba(0, 0, 0, 0.753);
 }
 
+@media (max-width:550px) {
+    #work {
+        width: 65vh;
+        margin-top: 25vh;
+    }
+}
+
 /* END OUR WORK */
 
 /* OUR WORK */
 #portfolio-projects {
     width: 100%;
-    height: 100vh;
-    margin-top: 15vh;
-
+    height: 120vh;
+    margin-top: 25vh;
 }
 #portfolio-projects .container-md-12 {
-    width: 90%;
-    height: 70vh;
+    width: 100%;
+    height: 80vh;
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: green;
+    display: inline-block;
+
 }
+#portfolio-projects .container-md-12 .box {
+    width: 80%;
+    height: 30%;
+    margin-top: .5vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+
+}
+#portfolio-projects .container-md-12 .box img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#portfolio-projects .container-md-12 .box .col-4 {
+    height: 100%;
+    margin-top: 1vh;
+}
+#portfolio-projects .container-md-12 .box .col-6 {
+
+    margin-top: 1vh;
+}
+#portfolio-projects .container-md-12 .col-md-8 {
+
+    height: 30vh;
+}
+#portfolio-projects .container-md-12 .col-md-8 img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#portfolio-projects .container-md-12 .col-md-8 img:hover {
+    position: relative;
+    zoom: 1.5;
+}
+#portfolio-projects .container-md-12 .col-md-4{
+
+    margin-top: 1vh;
+    margin-left: 0vh;
+    cursor: pointer;
+    height: 30vh;
+}
+#portfolio-projects .container-md-12 .col-md-4 img{
+    width: 100%;
+    height: 100%;
+    
+}
+#portfolio-projects .container-md-12 .col-4{
+    margin-top: 1vh;
+    margin-left: 0vh;
+
+    height: 20vh;
+}
+#portfolio-projects .container-md-12 .col-4 img{
+    width: 100%;
+    height: 100%;
+}
+#portfolio-projects .container-md-12 .col-8{
+    margin-top: 1vh;
+    background-color: rgb(0, 255, 13);
+    height: 20vh;
+}
+
+@media (max-width:550px) {
+    #portfolio-projects {
+        margin-top: 60vh;
+    }
+    #portfolio-projects .container-md-12 .col-md-8 img {
+
+        width: 60%;
+    }
+
+}
+
 
 /* END OUR WORK */
 
@@ -556,8 +752,8 @@ table {
 #clients {
     width: 100%;
     height: 60vh;
-
-    background-color: black;
+    margin-top: 30vh;
+    background-color: rgb(13, 53, 228);
     display: inline;
 }
 #clients .container-md-12 {
@@ -565,7 +761,7 @@ table {
     height: 30vh;
     margin-left: 12%;
     margin-right: 15%;
-
+    background-color: rebeccapurple;
     margin-top: 15vh;
 
     display: flex;
@@ -593,14 +789,98 @@ table {
 
 
 #footer {
-    margin-top: 15vh;
+
+    margin-top: 20vh;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background-color: orange;
 }
 
 #copyright {
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     background-color: green;
+}
+
+
+.single-logo-item img {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.logo-carousel-section {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.footer-area {
+  background-color: #051922;
+  margin-top: 20vh;
+  color: #fff;
+  padding: 150px 0;
+}
+
+h2.widget-title {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+h2.widget-title:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #F28123;
+  content: "";
+}
+
+.footer-box p {
+  color: #fff;
+  opacity: 0.7;
+  line-height: 1.8;
+}
+
+.footer-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-box ul li {
+  opacity: 0.7;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.footer-box ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-box.subscribe form input[type=email] {
+  border: none;
+  background-color: #012738;
+  width: 78%;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+}
+
+.footer-box.subscribe form button {
+  width: 20%;
+  border: none;
+  background-color: #012738;
+  color: #F28123;
+  padding: 14px 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+
+.footer-box.subscribe form button:focus {
+  outline: none;
 }
