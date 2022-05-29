@@ -430,7 +430,7 @@ table {
 #about-company {
     width: 100%;
     height: auto;
-    margin-top: 10vh;
+    margin-top: 25vh;
     padding-bottom: 10px;
     position: relative;
 
@@ -456,9 +456,7 @@ table {
 }
 #about-company .container .container-md .col-12 {
    color: rgb(0, 0, 0);
-   display: flex;
    margin-top: 5vh;
-
 
 }
 
@@ -488,38 +486,6 @@ table {
 
     color: rgb(255, 255, 255);
 }
-#about-company .container .container-md .col-12 h4 {
-   margin-top: 3vh;
-   text-align: justify;
-   font-size: 16px;
-   margin-left: 0vh;
-   width: 100%;
-}
-#about-company .container .container-md .col-12 .col-6 {
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5vh;
-    margin-bottom: 4vh;
-    height: 15vh;
-    cursor: pointer;
-    display: inline;
-
- }
- #about-company .container .container-md .col-12 .col-6 h4 {
-
-    width: 100%;
-    margin-left: 0vh;
-    margin-top: 1vh;
- }
- #about-company .container .container-md .col-12 .col-6 img {
-
-    width: 20%;
-    margin-top: 1vh;
-    margin-left: 40%;
-    margin-right: 40%;
- }
-
 
  #about-company .container .row {
     margin-top: 5vh;
@@ -550,12 +516,38 @@ table {
      color: rgb(0, 0, 0);
  }
 
- @media (max-width: 550px) {
-    #about-company .container .container-md .col-12 {
-        display: inline-block;
-     
-     }
- }
+#about-company .grid {
+	display: grid;
+    width: 100%;
+	grid-template-columns: 5fr 5fr 5fr 5fr;
+
+}
+
+#about-company .grid-template-rows-1 {
+	grid-template-rows: 50% 50%;
+}
+
+
+/* Grid Item */
+#about-company .item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#about-company .grid {
+
+	max-width: 80vh;
+    width: 80%;
+	margin: 0 auto;
+    margin-top: 10vh;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
 
 
 /* END ABOUT COMPANY */
@@ -671,7 +663,7 @@ table {
 /* OUR WORK */
 #work {
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-top: 15vh;
 
 }
@@ -682,45 +674,58 @@ table {
 
 #work .col-12 {
     margin-top: 10vh;
-    height: 80vh;
+    height: 70vh;
     display: flex;
 
 }
 #work .col-12 .col-6 {
-    height: 100%;
+    height: 55vh;
     display: inline-block;
 
 }
 #work .col-12 .col-6 h2 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
-    width: 70%;
+    margin-top: 15vh;
+    width: 80%;
     text-align: justify;
-    font-size: 2vw;
+    font-size: 30px;
 
 }#work .col-12 .col-6 h3 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
-    width: 70%;
-    text-align: justify;
-    font-size: 1.5vw;
-
-}
-#work .col-12 .col-6 .col-12 {
-    height: 30%;
     margin-top: 5vh;
+    width: 80%;
+    text-align: justify;
+    font-size: 22px;
 
 }
-#work .col-12 .col-6 .col-12 .col-4 {
-    height: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: rgb(48, 44, 47);
-    margin-left: .5vh;
+#work .grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#work .grid-template-rows-1 {
+	grid-template-rows: 150px 150px;
+}
+
+
+/* Grid Item */
+#word .item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#work .grid {
+
+	max-width: 80vh;
+	margin: 0 auto;
+    margin-top: 10vh;
 
 }
+
 @media (max-width:900px) {
     #work .col-12 .col-6 h2 {
         margin-top: 10vh;
@@ -748,8 +753,9 @@ table {
 /* OUR WORK */
 #portfolio-projects {
     width: 100%;
-    height: 120vh;
-    margin-top: 25vh;
+    height: 110vh;
+    margin-top: 0vh;
+
 }
 #portfolio-projects .container-md-12 {
     width: 100%;
@@ -842,7 +848,7 @@ table {
 #clients {
     width: 100%;
     height: 60vh;
-    margin-top: 30vh;
+    margin-top: 0vh;
 
     display: inline;
 }
