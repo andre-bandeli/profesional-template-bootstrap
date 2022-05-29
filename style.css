@@ -1011,3 +1011,45 @@ h2.widget-title:after {
     text-align: justify;
     
 }
+
+
+
+#projetos {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10vh;
+}
+.title {
+    text-align: center;
+}
+#projetos .col-12 {
+    height: 80%;
+    margin-top: 5%;
+}
+
+#projetos .grid {
+	display: grid;
+	grid-template-columns: 15fr 5fr 15fr 5fr 15fr 5fr 15fr;
+}
+
+#projetos .grid-template-rows-1 {
+	grid-template-rows: 200px 200px 200px 150px;
+}
+
+
+/* Grid Item */
+#projetos  .item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#projetos .grid {
+    cursor: pointer;
+	max-width: 100vh;
+    width: 100%;
+	margin: 0 auto;
+    margin-top: 10vh;
+
+}
