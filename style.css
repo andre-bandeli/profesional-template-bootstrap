@@ -94,6 +94,8 @@ table {
 }
 #head .container .col-lg-4 .row .btn{
 
+    width:auto;
+    font-size: 70%;
     background-color: rgba(240, 64, 20, 0.76);
     border: none;
     color: black;
@@ -106,17 +108,24 @@ table {
 }
 
 @media (max-width:550px) {
+    #head {
+        height: 40vh;
+
+
+    }
     #head .container {
         width: 100%;
         height: auto;
         display: inline-block;
+        
+        margin-left: 0vh;
+        margin-right: 0vh;
 
-        margin-left: 12%;
-        margin-right: 12%;
     
     }
     #head .container .col-lg-4 {
         height: 60%;
+        width: 90%;
         border: none;
         text-align: center;
         border-bottom: .5px solid rgba(0, 0, 0, 0.507) ;
@@ -125,14 +134,15 @@ table {
         font-size: 16px;
     }
     #head .container .col-lg-4 .row h5{
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 2vh;
         margin-bottom: 1vh;
     }
     #head .container .col-lg-4 .row .btn{
         margin-top: 2vh;
         margin-bottom: 2vh;
-        background-color: rgb(216, 27, 14);
+        font-size: 10px;
+
     }
 }
 
@@ -183,16 +193,32 @@ table {
     #navbar {
         width: 100%;
         height: 5vh;
+        margin-top: 0vh;
     }
     #navbar .navbar-nav {
         width: 100%;
-        height: 50vh;
+        height: 85vh;
         text-align: center;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.836);
+        
     }
     #navbar .collapse .redes {
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5vh;
+        margin-top: -2vh;
+        border-radius: 5px;
+        background-color: rgba(231, 65, 23, 0.63);
+        color: white;
+    }
+    #navbar .collapse .redes img {
+        margin-left: 2vh;
+    }
+    #navbar .collapse .nav-item a {
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+        color: white;
     }
 }
 
@@ -205,7 +231,7 @@ table {
     width: 100%;
     height: 80vh;
     margin-top: 0vh;
-    background-color: yellow;
+
 
 }
 #carouselExampleControls .container-md {
@@ -213,7 +239,7 @@ table {
     height: 15vh;
     margin-top: -5vh;
     margin-left: 25%;
-    margin-right: 25%;
+    margin-right: auto;
     display: flex;
 
     border-radius: 2px;
@@ -238,6 +264,7 @@ table {
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.863);
 
+
 }
 
 #carouselExampleControls .carousel-inner .carousel-item img {
@@ -248,46 +275,54 @@ table {
 }
 #carouselExampleControls .carousel-inner .carousel-item .container {
     
-    position: absolute;
-    width: 80%;
+
+    width: 90%;
     height: 35vh;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 15vh;
+    margin-left: 5%;
+    margin-right:5%;
     margin-top: 15vh;
     z-index: 2;
 
     display: inline;
 
+
+
 }
 
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 {
     height: 30%;
-    width: 90%;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+
+    margin-left: 0vh;
+    margin-right: 0vh;
 
     border: 1px solid transparent;
     position: static;
 
 
+
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text { 
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
 
-    margin-top: 5%;
+
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text h2 { 
-    font-size: 25px;
+    font-size: 1.2vw;
     color: white;
+    width: 90%;
+    margin-left: 0%;
+
     text-align: center;
-    margin-top: 8vh;
+    margin-top: 15vh;
+    position: absolute;
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text h1 { 
-    font-size: 40px;
+    font-size: 2vw;
     color: white;
     font-weight: bolder;
     text-align: center;
@@ -295,10 +330,10 @@ table {
 }
 #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .btn { 
     
-    width: 40%;
+    width: 20%;
     height: 6vh;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 40%;
+    margin-right: 40%;
     margin-top: 5vh;
     background-color: transparent;
     border: 2px solid orangered;
@@ -333,6 +368,49 @@ table {
     font-weight: bold;
 }
 
+@media (max-width:550px) {
+    #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text h2 { 
+        font-size: 3vw;
+
+    }
+    #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .text h1 { 
+        font-size: 5vw;
+
+    }
+    #carouselExampleControls .carousel-inner .carousel-item .container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #carouselExampleControls .carousel-inner .carousel-item .container .col-12 .btn { 
+    
+        width: 80%;
+        height: 4vh;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #carouselExampleControls .container-md {
+        width: 90%;
+        height: 15vh;
+        margin-top: -5vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #carouselExampleControls .container-md .col-8 h3{
+        font-size: 4vw;
+        width: 90%;
+
+    
+    }
+    #carouselExampleControls .col-4 .btn { 
+    
+        margin-left: 0vh;
+        width: 100%;
+        font-size: 1.7vw;
+    }
+    
+}
+
 @keyframes fadeInLeft {
     0% {
        opacity: 1;
@@ -344,37 +422,7 @@ table {
     }
  }   
 
- @media (max-width: 550px) {
-    #carouselExampleControls .container-md .col-8 h3{
-        width: 80%;
-        margin-top: 5vh;
-        margin-left: 1vh;
-        font-size: 16px;
-    }
-
-    #carouselExampleControls .container-md {
-        width: 65%;
-        height: 15vh;
-        margin-top: -5vh;
-        margin-left: 10%;
-        margin-right: 10%;
-        display: flex;
-
-        border-radius: 2px;
-        position: absolute;
-
-    }
-    #carouselExampleControls .col-4 .btn { 
-        background-color: rgba(255, 68, 0, 0.938);
-        width: auto;
-        height: 6vh;
-        margin-left: -7vh;
-        font-size: 10px;
-        
-    }
- }
-
-
+ 
 /* END SLIDER HOME */
 
 
@@ -397,6 +445,7 @@ table {
     margin-right: auto;
     padding-bottom: 5px;
     margin-bottom: 2vh;
+
 }
 #about-company .container .container-md {
     width: 90%;
@@ -409,6 +458,7 @@ table {
    color: rgb(0, 0, 0);
    display: flex;
    margin-top: 5vh;
+
 
 }
 
@@ -500,30 +550,11 @@ table {
      color: rgb(0, 0, 0);
  }
 
- @media (max-width:550px) {
-    #about-company  {
-        width: 60vh;
-        margin-top: 25vh;
-    }  
-    #about-company .container {
-        width: auto;
-        margin-left: 2vh;
-    }
-    #about-company .container .container-md .col-12 h2 {
-    font-size: 4vw;
-    width: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    }
-
-    #about-company .container .container-md .col-12  {
-        width: 100%;
-        margin-left: 0vh;
-    }
+ @media (max-width: 550px) {
+    #about-company .container .container-md .col-12 {
+        display: inline-block;
+     
+     }
  }
 
 
@@ -554,14 +585,17 @@ table {
 }
 #number-projects .col-3 .imagem {
     
+    width: 100%;
+
     height: 50%;
 
 }
 #number-projects .col-3 .imagem img {
     
-    margin-left: 14vh;
+    margin-left:35%;
+    margin-right: 35%;
     margin-top: 3vh;
-    width: 30%;
+    width: 25%;
 }
 #number-projects .col-3 .row {
     
@@ -570,21 +604,67 @@ table {
 }
 #number-projects .col-3 .row h2 {
     
-    font-size: 40px;
+
+    width: 80%;
+    font-size: 2.5vw;
     margin-top: 2vh;
-    margin-left: 17vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     color: white;
 
 }
 #number-projects .col-3 .row h3 {
-    
-    font-size: 20px;
+    width: 80%;
+
+    font-size: 1vw;
     margin-top: 2vh;
-    margin-left: 12vh;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 
 }
 
+@media (max-width: 750px) {
+    #number-projects .col-3 .imagem img {
+
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #number-projects .col-3 .row h2 {
+        
+        font-size: 3.5vw;
+    
+    }
+    #number-projects .col-3 .row h3 {
+        font-size: 1.5vw;
+    
+    }
+    
+}
+@media (max-width: 550px) {
+    #number-projects .col-3 .imagem img {
+
+        width: 80%;
+        margin-left:10%;
+        margin-right: 10%;
+        margin-top: 5vh;
+    }
+
+    #number-projects .col-3 .row h2 {
+        
+        font-size: 4.5vw;
+    
+    }
+    #number-projects .col-3 .row h3 {
+        font-size: 2.5vw;
+    
+    }
+    
+}
 /* END NUMBER PROJECTS */
 
 
@@ -593,66 +673,76 @@ table {
     width: 100%;
     height: 100vh;
     margin-top: 15vh;
-    background-color: black;
+
 }
  .title h2 {
     font-size: 35px;
     font-weight: 600;
 }
 
-#work .container-lm {
-    padding: 0;
-    width: 100%;
-    height: 70vh;
+#work .col-12 {
+    margin-top: 10vh;
+    height: 80vh;
     display: flex;
-    margin-top: 15vh;
 
 }
-#work .container-lm .col-6 {
-
-
-    border: 1px solid white;
-}
-
-#work .container-lm .col-6 h2{
-
-    margin-top: 15vh;
-    margin-left: 20%;
-    font-size: 30px;
-}
-#work .container-lm .col-6 h3{
-    width: 70%;
-    margin-top: 7vh;
-    text-align: justify;
-    font-size: 20px;
-    margin-left: 20%;
+#work .col-12 .col-6 {
+    height: 100%;
+    display: inline-block;
 
 }
-#work .container-lm .col-4 {
+#work .col-12 .col-6 h2 {
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid white;
-    display: grid;
+    margin-top: 10vh;
+    width: 70%;
+    text-align: justify;
+    font-size: 2vw;
+
+}#work .col-12 .col-6 h3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    width: 70%;
+    text-align: justify;
+    font-size: 1.5vw;
+
+}
+#work .col-12 .col-6 .col-12 {
+    height: 30%;
+    margin-top: 5vh;
+
+}
+#work .col-12 .col-6 .col-12 .col-4 {
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(48, 44, 47);
+    margin-left: .5vh;
+
+}
+@media (max-width:900px) {
+    #work .col-12 .col-6 h2 {
+        margin-top: 10vh;
+        font-size: 4vw;
     
-}
-#work .container-lm .col-4 .col-sm{
+    }#work .col-12 .col-6 h3 {
 
-    grid-template-columns: 100px 100px;
-
-    display: flex;
-}
-#work .container-lm .col-4 .col-sm .col-6{
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.753);
-}
-
-@media (max-width:550px) {
-    #work {
-        width: 65vh;
-        margin-top: 25vh;
+        font-size: 2.5vw;
+    
     }
 }
+@media (max-width:750px) {
+    #work .col-12 .col-6 h2 {
+        margin-top: 10vh;
+        font-size: 4vw;
+    
+    }#work .col-12 .col-6 h3 {
 
+        font-size: 2.5vw;
+    
+    }
+}
 /* END OUR WORK */
 
 /* OUR WORK */
@@ -736,7 +826,7 @@ table {
 
 @media (max-width:550px) {
     #portfolio-projects {
-        margin-top: 60vh;
+        margin-top: 0vh;
     }
     #portfolio-projects .container-md-12 .col-md-8 img {
 
@@ -883,4 +973,35 @@ h2.widget-title:after {
 
 .footer-box.subscribe form button:focus {
   outline: none;
+}
+
+#sobre {
+    width: 100%;
+    height: 120vh;
+    
+}
+#sobre .container{
+    margin-top: 10vh;
+    height: 100%;
+
+    
+}
+#sobre .container .col-12{
+    height: 40vh;
+
+    
+}
+#sobre .container .col-12 .title{
+    text-align: center;
+    height: 10vh;
+
+    
+}
+#sobre .container .col-12 h3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 1vw;
+    text-align: justify;
+    
 }
