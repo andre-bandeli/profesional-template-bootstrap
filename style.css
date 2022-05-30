@@ -531,10 +531,14 @@ table {
 /* Grid Item */
 #about-company .item {
 	margin: 5px;
-	background: tomato;
+    background-color: transparent;
 	text-align: center;
 	font-size: 1.5em;
 }
+#about-company .item img{
+	width: 90%;
+}
+
 
 #about-company .grid {
 
@@ -711,20 +715,20 @@ table {
 
 
 /* Grid Item */
-#word .item {
+#word .grid-template-rows-1 .item {
 	margin: 5px;
 	background: tomato;
 	text-align: center;
 	font-size: 1.5em;
 }
-
-#work .grid {
-
-	max-width: 80vh;
-	margin: 0 auto;
-    margin-top: 10vh;
-
+#word .grid-template-rows-1 .item:hover {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+    background-color: rgb(173, 10, 10);
 }
+
 
 @media (max-width:900px) {
     #work .col-12 .col-6 h2 {
@@ -854,16 +858,26 @@ table {
 }
 
 .grid-template-rows-1 {
-	grid-template-rows: 150px 150px 150px;
+	grid-template-rows: 170px 170px 170px;
 }
 
 
 /* Grid Item */
 .item {
 	margin: 5px;
-	background: tomato;
+	background: rgba(204, 204, 204, 0.836);
 	text-align: center;
 	font-size: 1.5em;
+}
+.item:hover {
+	margin: 5px;
+	background: rgba(15, 15, 15, 0.658);
+	text-align: center;
+	font-size: 1.5em;
+}
+.item img {
+	width: 40%;
+    margin-top: 2vh;
 }
 
 .grid {
@@ -1060,24 +1074,36 @@ h2.widget-title:after {
 
 #servicos {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
+    margin-top: 25vh;
     
 }
 #servicos .container{
-    margin-top: 10vh;
-    height: 100%;
-
-    
+    margin-top: 0vh;
+    height: 80vh;
+     
 }
 #servicos .container .col-12{
-    height: 40vh;
+    height: 30vh;
+
 
     
 }
 #servicos .container .col-12 .title{
     text-align: center;
-    height: 10vh;
+    margin-top: 20vh;
+    height: 5vh;
 
+}
+#servicos .container .col-12 .box{
+
+    margin-top: -20vh;
+    text-align: center;
+}
+#servicos .container .col-12 .box h3{
+
+    font-size: 25px;
+    margin-top: 15%;
     
 }
 #servicos .container .col-12 h3{
@@ -1086,9 +1112,46 @@ h2.widget-title:after {
     width: 80%;
     font-size: 16px;
     text-align: justify;
-
 }
 #servicos .container .form-row{
-    margin-top: 5vh;
+    margin-top: 15vh;
+
+}
+
+#servicos .grid {
+	display: grid;
+	grid-template-columns: 5fr 5fr 5fr;
+}
+
+#servicos .grid-template-rows-1 {
+	grid-template-rows: 150px 150px ;
+}
+
+
+/* Grid Item */
+#servicos .item {
+	margin: 5px;
+	background: rgba(41, 40, 39, 0.685);
+    border-radius: 1px;
+	text-align: center;
+	font-size: 1.5em;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.26);
+}
+
+#servicos .grid {
+
+	max-width: 80vh;
+	margin: 0 auto;
+    margin-top: 10vh;
+
+}
+
+#servicos .item:hover {
+    background-color: transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.63);
+    transition: .3s ease-in-out;
+    color: black;
+    font-weight: bolder;
 
 }
