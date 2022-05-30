@@ -1055,3 +1055,40 @@ h2.widget-title:after {
     height: 15vh;
     background-color: rgba(7, 137, 189, 0.884);
 }
+
+
+
+#servicos {
+    width: 100%;
+    height: 80vh;
+    
+}
+#servicos .container{
+    margin-top: 10vh;
+    height: 100%;
+
+    
+}
+#servicos .container .col-12{
+    height: 40vh;
+
+    
+}
+#servicos .container .col-12 .title{
+    text-align: center;
+    height: 10vh;
+
+    
+}
+#servicos .container .col-12 h3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 16px;
+    text-align: justify;
+
+}
+#servicos .container .form-row{
+    margin-top: 5vh;
+
+}
