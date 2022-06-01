@@ -241,7 +241,7 @@ table {
     margin-left: 30%;
     margin-right: 30%;
     display: flex;
-    background-color: yellow;
+    background-color: rgb(219, 219, 54);
     border-radius: 2px;
     position: absolute;
 
@@ -524,7 +524,7 @@ table {
 
 }
 #about-company .container {
-    width: 60%;
+    width: 80%;
     height: auto;
     margin-top: 15vh;
 
@@ -536,7 +536,7 @@ table {
 
 }
 #about-company .container .container-md {
-    width: 90%;
+    width: 95%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -558,21 +558,9 @@ table {
     color: rgb(0, 0, 0);
     font-weight: bolder;
 }
-#about-company .container .container-md .col-12 h3 {
-    margin-top: 10vh;
-    cursor: pointer;
-    width: 20%;
-    padding: 10px;
-}
-#about-company .container .container-md .col-12 h3:hover {
-    width: 15%;
-    height: 4vh;
-    transition: .4s ease-in-out;
-    font-weight: bolder;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.733);
-
-    color: rgb(255, 255, 255);
+#about-company .container .container-md .col-12 h4 {
+    width: 100%;
+    text-align: center;
 }
 
  #about-company .container .row {
@@ -582,16 +570,30 @@ table {
 
  #about-company .container .row .card {
     background-color: transparent;
+    border: none;
+    border-radius: 0px;
     border-bottom: 1px solid orangered;
     margin-top: .5vh;
     text-align: center;
     color: black;
  }
  #about-company .container .row .card:hover {
-    background-color: orangered;
+    background-color: rgba(3, 3, 3, 0.815);
     transition: .4s ease-in-out;
  }
+ #about-company .container .row .card:hover a {
+    color: white;
+ }
+ #about-company .container .row .card .card-body p {
+    color: rgb(0, 0, 0);
+ }
+ #about-company .container .row .card:hover .card-body p {
+    color: rgb(255, 255, 255);
+ }
  #about-company .container .row .card h6 {
+    color: black;
+ }
+ #about-company .container .row .card a {
     color: black;
  }
  #about-company .container .row .card .card-header {
@@ -604,10 +606,12 @@ table {
      color: rgb(0, 0, 0);
  }
 
-#about-company .grid {
+#about-company .col-12 .grid {
 	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
-	grid-template-columns: 5fr 5fr 5fr 5fr;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -618,7 +622,7 @@ table {
 
 /* Grid Item */
 #about-company .item {
-	margin: 5px;
+	margin: 0px;
     background-color: transparent;
 	text-align: center;
 	font-size: 1.5em;
@@ -630,15 +634,64 @@ table {
 
 #about-company .grid {
 
-	max-width: 80vh;
     width: 80%;
 	margin: 0 auto;
     margin-top: 10vh;
     margin-left: 10%;
     margin-right: 10%;
-
 }
 
+
+@media (max-width: 1600px) {
+    
+    #about-company .container .container-md .col-12 h2 {
+        font-size: 2.5vw;
+
+    }
+    #about-company .container .container-md .col-12 h4 {
+        font-size: 1.5vw;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 1000px) {
+    #about-company .container .container-md .col-12 h2 {
+        font-size: 2.5vw;
+
+    }
+    #about-company .container .container-md .col-12 h4 {
+        font-size: 1.8vw;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #about-company .item {
+        width: 100%;
+    }
+    #about-company .item img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    #about-company .item {
+        width: 120%;
+    }
+    #about-company .item img{
+        width: 100%;
+    }
+    #about-company .container .container-md .col-12 h2 {
+        font-size: 3.5vw;
+        width: 100%;
+
+    }
+    #about-company .container .container-md .col-12 h4 {
+        font-size: 3vw;
+        text-align: justify;
+    }
+}
 
 
 
@@ -710,28 +763,39 @@ table {
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1050px) {
     #number-projects .col-3 .imagem img {
-
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
-
     #number-projects .col-3 .row h2 {
-        
         font-size: 3.5vw;
     
     }
     #number-projects .col-3 .row h3 {
         font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 700px) {
+    #number-projects .col-3 .imagem img {
+        width: 60%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    #number-projects .col-3 .row h2 {
+        font-size: 3.5vw;
     
+    }
+    #number-projects .col-3 .row h3 {
+        font-size: 1.5vw;
     }
     
 }
 @media (max-width: 550px) {
     #number-projects .col-3 .imagem img {
-
         width: 80%;
         margin-left:10%;
         margin-right: 10%;
@@ -773,18 +837,22 @@ table {
     height: 80vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(29, 27, 27, 0.925);
     display: flex;
     margin-top: 10vh;
     
 }
 #portfolio-projects .container-md .col-md {
     height: 100%;
-    background-color: white;
+    width: 50%;
+    
+}
+#portfolio-projects .container-md .col-md .container, #portfolio-projects .container-md .col {
+    width: 100%;
+    background-color: rgba(29, 27, 27, 0.925);
     
 }
 #portfolio-projects .container-md .col-md .container, #portfolio-projects .container-md .col .container {
-    width: 70%;
+    width: 90%;
     height: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -812,17 +880,10 @@ table {
 }
 
 
-
-
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
     #portfolio-projects {
         max-width: 100%;
         margin-top: 0vh;
-    }
-    #portfolio-projects .container-md {
-
-        display: inline-block;
-        
     }
     #portfolio-projects .container-md .col-md {
         height: 50%;
@@ -832,6 +893,54 @@ table {
         width: 100%;
         height: 50%;
         
+    }
+
+}
+@media (max-width: 800px) {
+    #portfolio-projects {
+        max-width: 100%;
+        margin-top: 0vh;
+    }
+    #portfolio-projects .container-md .col-md {
+        height: 100%;
+        
+    }
+    #portfolio-projects .container-md .col-md .container{
+        width: 100%;
+    
+    }
+    #portfolio-projects .container-md .col {
+        width: 100%;
+        height: 100%;
+        
+    }
+    #portfolio-projects .container-md .col .container {
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    #portfolio-projects {
+        max-width: 100%;
+        margin-top: 0vh;
+        height: 150vh;
+    }
+    #portfolio-projects .container-md  {
+        height: 50%;
+        display: inline-block;
+        
+    }
+    #portfolio-projects .container-md .col-md {
+        width: 100%;
+        height: 70%;
+        display: inline-block;
+        
+    }
+    #portfolio-projects .container-md .col {
+        width: 100%;
+        height: 70%;
     }
 
 }
