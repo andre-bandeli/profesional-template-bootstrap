@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -28,6 +30,7 @@ body {
     max-width: 100%;
 	line-height: 1;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Gotham', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -197,7 +200,7 @@ table {
 }
 #navbar .navbar-nav .nav-item:hover .nav-link {
 
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: rgba(0, 0, 0, 0.87);
     transition: .3s ease-in-out;
     color: white;
 }
@@ -213,7 +216,7 @@ table {
     
     #navbar {
         width: 100%;
-        height: 5vh;
+        height: 7vh;
         margin-top: 0vh;
     }
     #navbar .navbar-nav {
@@ -221,7 +224,8 @@ table {
         height: 85vh;
         text-align: center;
         border-radius: 15px;
-        background-color: rgba(0, 0, 0, 0.836);
+        background-color: rgba(0, 0, 0, 0.959);
+        color: white;
         
     }
     #navbar .collapse .redes {
@@ -239,7 +243,7 @@ table {
     #navbar .collapse .nav-item a {
         margin-top: 4vh;
         margin-bottom: 2vh;
-        color: white;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -251,7 +255,8 @@ table {
 #carouselExampleControls {
     width: 100%;
     height: 80vh;
-    margin-top: 0vh;
+    margin-top: -2vh;
+    background-color: red;
 
 
 }
@@ -1119,7 +1124,7 @@ h2.widget-title:after {
 
 #sobre {
     width: 100%;
-    height: 170vh;
+    height: 140vh;
     
 }
 #sobre .container{
@@ -1145,7 +1150,10 @@ h2.widget-title:after {
     margin-right: auto;
     width: 80%;
     font-size: 18px;
+    font-weight: 300;
     text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    line-height:2vw;
     
 }
 
